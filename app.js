@@ -5,7 +5,6 @@ const checkTriangle = document.querySelector("#check-triangle")
 const showMessage = document.querySelector("#show-message")
 
 checkTriangle.addEventListener("click", () => {
-  
   const userTriangle = Number(inputOne.value) + Number(inputTwo.value) + Number(inputThree.value)
 
   if (userTriangle === 180) { 
