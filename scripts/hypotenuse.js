@@ -3,8 +3,15 @@ const heightValue = document.querySelector("#height-value")
 const calculateHypo = document.querySelector("#calculate-hypo")
 const showMessage = document.querySelector("#show-message")
 
+const calculateHypotenuse = (a, b) => {
+ const hypotenuse = Math.sqrt(a**2 + b**2)
+ return hypotenuse
+}
 
 calculateHypo.addEventListener("click", () => {
-  console.log("button clicked")
+  if(Number(baseValue.value) && Number(heightValue.value) > 0) {
+    const hypo = calculateHypotenuse(baseValue.value, heightValue.value)
+    showMessage.innerText = `The length of hypotenuse is  ${hypo}`
+  }    
 })
 
