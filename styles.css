@@ -16,11 +16,3 @@ nav {
   color: #fff;
 }
 
-ul {
-  display: flex;
-}
-
-ul>li {
-  list-style: none;
-  padding: 1rem;
-}
