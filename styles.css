@@ -1,5 +1,6 @@
 :root {
   --primary-color: #7c3aed;
+  --secondary-color: #fff;
 }
 
 * {
@@ -8,11 +9,18 @@
   box-sizing: border-box;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: var(--primary-color);
-  color: #fff;
+header {
+  background: var(--primary-color);
+  color: var(--secondary-color);
 }
 
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 1rem;
+}
+
+a {
+  color: var(--secondary-color);
+}
